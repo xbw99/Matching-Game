@@ -196,6 +196,7 @@ function endGame(){
   $("#finalTime").text(time);
 }
 
+/*initialize the start page*/
 function initialize(){
   for(i=0; i<listOfCard.length;i++){
     var newLi = $("<li/>").addClass("card");
