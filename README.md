@@ -1,20 +1,36 @@
 # Memory Game Project
 
+When you start the page, the stopwatch will count the time you use in this game. At each step, you need to filp over a card and remeber the symbol behind that. Your goal is to match all the cards with the same symbols. Once you achieve the goal, a congratulation modal will show up and you will be asked whether you want to play again.
+
+
 ## Table of Contents
 
 * [Instructions](#instructions)
 * [Contributing](#contributing)
+* [Demo](#demo)
+* [License](#license)
 
 ## Instructions
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+Functionality:
+- restart
+- moveCounter
+- stopWatch
+- click
+- initialize
 
-To get started, open `js/app.js` and start building out the app's functionality
-
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
 
 ## Contributing
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+- Add timer to the game
+- Add restart functionality 
+- Add animation to cards when clicked
+- Add congratulation modal when game is over
 
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+## Demo
+
+You can play the game [here]( https://xbw99.github.io/Matching-Game/)
+
+## License
+
+MIT
