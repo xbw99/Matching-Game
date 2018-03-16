@@ -153,7 +153,7 @@ function clicks(){
   })
 
   $(".card").click(function(){
-    if($(this).attr("class")==="card"){
+    if($(this).attr("class")==="card" && $(".noMatch").length !=2){
       display($(this));
       addToOpen($(this));
       $(this).addClass("show");
