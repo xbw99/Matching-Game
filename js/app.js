@@ -64,14 +64,14 @@ function match(openCard){
   if(openCard[0]===openCard[1]){
     $(".show").toggleClass("match animated rubberBand");
     setTimeout(function(){
-      $(".match").toggleClass("show");
-    },750);
+      $(".show").toggleClass("show");
+    },1000);
   }
   else{
     $(".show").toggleClass(" noMatch animated wobble");
     setTimeout(function(){
       $(".noMatch").toggleClass("show noMatch open animated wobble");
-    },750);
+    },1000);
     open.splice(0,2);
   }
 }
