@@ -62,13 +62,16 @@ function addToOpen(card){
 /*check whether cards match and add animation to the corresponding cards*/
 function match(openCard){
   if(openCard[0]===openCard[1]){
-    $(".show").toggleClass("show match animated rubberBand");
+    $(".show").toggleClass("match animated rubberBand");
+    setTimeout(function(){
+      $(".match").toggleClass("show");
+    },750);
   }
   else{
-    $(".show").toggleClass("show noMatch animated wobble");
+    $(".show").toggleClass(" noMatch animated wobble");
     setTimeout(function(){
-      $(".noMatch").toggleClass("noMatch open animated wobble");
-    },1000)
+      $(".noMatch").toggleClass("show noMatch open animated wobble");
+    },750);
     open.splice(0,2);
   }
 }
@@ -153,7 +156,7 @@ function clicks(){
   })
 
   $(".card").click(function(){
-    if($(this).attr("class")==="card" && $(".noMatch").length !=2){
+    if($(this).attr("class")==="card" && $(".show").length !=2){
       display($(this));
       addToOpen($(this));
       $(this).addClass("show");
